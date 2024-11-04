@@ -9,29 +9,32 @@
 
                  <div class="row py-5" style="row-gap: 20px">
                      @foreach ($berita as $item)
-                         @php
-                             function potongTeks($teks, $panjang_maks = 200)
-                             {
-                                 // Memastikan teks panjangnya lebih dari panjang maksimum
-                                 if (strlen($teks) > $panjang_maks) {
-                                     // Potong teks hingga panjang maksimum
-                                     $teks = substr($teks, 0, $panjang_maks);
+                     @php
+                        if (!function_exists('potongTeks')) {
+                            function potongTeks($teks, $panjang_maks = 200)
+                            {
+                                // Memastikan teks panjangnya lebih dari panjang maksimum
+                                if (strlen($teks) > $panjang_maks) {
+                                    // Potong teks hingga panjang maksimum
+                                    $teks = substr($teks, 0, $panjang_maks);
 
-                                     // Cari posisi spasi terakhir agar tidak memotong kata secara sembarang
-                                     $posisi_spasi_terakhir = strrpos($teks, ' ');
+                                    // Cari posisi spasi terakhir agar tidak memotong kata secara sembarang
+                                    $posisi_spasi_terakhir = strrpos($teks, ' ');
 
-                                     // Potong lagi hingga spasi terakhir untuk memastikan potongan teks berakhir pada kata
-                                     $teks = substr($teks, 0, $posisi_spasi_terakhir);
+                                    // Potong lagi hingga spasi terakhir untuk memastikan potongan teks berakhir pada kata
+                                    $teks = substr($teks, 0, $posisi_spasi_terakhir);
 
-                                     // Tambahkan elipsis untuk menunjukkan bahwa teks dipotong
-                                     $teks .= '...';
-                                 }
+                                    // Tambahkan elipsis untuk menunjukkan bahwa teks dipotong
+                                    $teks .= '...';
+                                }
 
-                                 return $teks;
-                             }
+                                return $teks;
+                            }
+                        }
 
-                             $teks_pendek = potongTeks(strip_tags($item->isi_berita));
-                         @endphp
+                        $teks_pendek = potongTeks(strip_tags($item->isi_berita));
+                        @endphp
+
                          <div class="col-md-6">
                              <div class="card shadow-lg h-470px">
                                  <img src="{{ asset('berita/' . $item->gambar) }}" class="w-100 h-200px" alt="">

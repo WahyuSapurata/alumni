@@ -22,16 +22,16 @@ class StoreAlumniRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'tanggal_lahir' => 'required',
+            // 'tanggal_lahir' => 'required',
             'jenis_kelamin' => 'required',
             'alamat' => 'required',
-            'nomor_hp' => 'required',
+            // 'nomor_hp' => 'required',
             'tahun_masuk' => 'required',
             'tahun_lulus' => 'required',
-            'periode' => 'required',
-            'pekerjaan' => 'required',
-            'predikat' => 'required',
-            'ipk' => 'required',
+            // 'periode' => 'required',
+            // 'pekerjaan' => 'required',
+            // 'predikat' => 'required',
+            // 'ipk' => 'required',
         ];
     }
 

@@ -10,6 +10,7 @@
                  <div class="row py-5" style="row-gap: 20px">
                      @foreach ($loker as $item)
                          @php
+                         if (!function_exists('potongTeksLoker')) {
                              function potongTeksLoker($teks, $panjang_maks = 200)
                              {
                                  // Memastikan teks panjangnya lebih dari panjang maksimum
@@ -29,6 +30,7 @@
 
                                  return $teks;
                              }
+                            }
 
                              $teks_pendek = potongTeksLoker(strip_tags($item->deskripsi));
                          @endphp
