@@ -1,4 +1,4 @@
-<div class="modal fade" tabindex="-1" id="kt_modal_1">
+<div class="modal fade" tabindex="-1" id="kt_modal_1" style="z-index: 1; margin-top: 60px; padding-bottom: 50px">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

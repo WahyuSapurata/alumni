@@ -59,9 +59,11 @@
 
                                 <!--begin::Logo image-->
                                 <a href="">
-                                    <img alt="Logo" src="https://uin-alauddin.ac.id/themes//images/favicon.png"
+                                    <img alt="Logo"
+                                        src="https://uin-alauddin.ac.id/themes/images/logo-uin-navbar.png"
                                         class="logo-default h-25px h-lg-60px" />
-                                    <img alt="Logo" src="https://uin-alauddin.ac.id/themes//images/favicon.png"
+                                    <img alt="Logo"
+                                        src="https://uin-alauddin.ac.id/themes/images/logo-uin-navbar.png"
                                         class="logo-sticky h-20px h-lg-55px" />
                                 </a>
                                 <!--end::Logo image-->
@@ -77,7 +79,7 @@
                                     data-kt-swapper-mode="prepend"
                                     data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
                                     <!--begin::Menu-->
-                                    <div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-500 menu-state-title-primary nav nav-flush fs-5 fw-semibold"
+                                    <div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-500 menu-state-title-primary nav nav-flush fs-5 fw-semibold gap-5"
                                         id="kt_landing_menu">
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
@@ -120,7 +122,7 @@
                     <!--end::Container-->
                 </div>
                 <!--end::Header-->
-                <div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-500px px-9"
+                <div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-500px px-9 mt-5 pb-5"
                     data-kt-sticky="true" data-kt-sticky-name="landing-partner"
                     data-kt-sticky-offset="{default: '200px', lg: '300px'}">
                     <!--begin::Heading-->
@@ -190,7 +192,7 @@
 
                 <!--begin::Highlight-->
                 <div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13"
-                    style="background: linear-gradient(90deg, #20AA3E 0%, #03A588 100%);">
+                    style="background-color: dimgray">
                     <!--begin::Content-->
                     <div class="my-2 me-5">
                         <!--begin::Title-->

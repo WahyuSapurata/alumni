@@ -39,11 +39,10 @@
         <div class="mb-0" id="home">
             <!--begin::Wrapper-->
             <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg"
-                style="background: linear-gradient(0deg, rgba(28, 28, 49, 0.5), rgb(21, 37, 48)), url(bg-landing.jpeg), no-repeat; background-repeat: no-repeat; background-position: center; background-size:cover; height:100vh">
+                style="background: linear-gradient(0deg, rgba(28, 28, 49, 0.5), rgb(21, 37, 48)), url(bg-landing.jpg), no-repeat; background-repeat: no-repeat; background-position: top right; background-size: cover; height:100vh">
                 <!--begin::Header-->
                 <div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header"
                     data-kt-sticky-offset="{default: '200px', lg: '300px'}">
-
                     <!--begin::Container-->
                     <div class="container">
                         <!--begin::Wrapper-->
@@ -59,9 +58,11 @@
 
                                 <!--begin::Logo image-->
                                 <a href="">
-                                    <img alt="Logo" src="https://uin-alauddin.ac.id/themes//images/favicon.png"
+                                    <img alt="Logo"
+                                        src="https://uin-alauddin.ac.id/themes/images/logo-uin-navbar.png"
                                         class="logo-default h-25px h-lg-60px" />
-                                    <img alt="Logo" src="https://uin-alauddin.ac.id/themes//images/favicon.png"
+                                    <img alt="Logo"
+                                        src="https://uin-alauddin.ac.id/themes/images/logo-uin-navbar.png"
                                         class="logo-sticky h-20px h-lg-55px" />
                                 </a>
                                 <!--end::Logo image-->
@@ -77,7 +78,7 @@
                                     data-kt-swapper-mode="prepend"
                                     data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
                                     <!--begin::Menu-->
-                                    <div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-500 menu-state-title-primary nav nav-flush fs-5 fw-semibold"
+                                    <div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-500 menu-state-title-primary nav nav-flush fs-5 fw-semibold gap-2"
                                         id="kt_landing_menu">
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
@@ -115,9 +116,9 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#petunjuk"
-                                                data-kt-scroll-toggle="true"
-                                                data-kt-drawer-dismiss="true">Petunjuk</a>
+                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#tracer"
+                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Tracer
+                                                Study</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
@@ -147,37 +148,22 @@
                 <!--end::Header-->
 
                 <!--begin::Landing hero-->
-                <div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-500px px-9">
+                <div class="d-flex flex-column w-100 min-h-350px min-h-lg-500px px-20">
                     <!--begin::Heading-->
-                    <div class="text-center mb-5 mb-lg-10 py-10 py-lg-20">
+                    <div class="text-left mb-5 mb-lg-10 py-10 py-lg-20">
                         <!--begin::Title-->
-                        <h1 class="text-white lh-base fw-bold fs-2x fs-lg-3x mb-15">
-                            <span id="kt_typedjs_example_1">Selamat Datang</span> <br />
-                            Alumni
-                            <span
-                                style="background: linear-gradient(to right, #12CE5D 0%, #12ce5d98 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-                                <span id="kt_landing_hero_text"></span>
-                            </span>
+                        <h1 class="text-white lh-base fw-bold fs-2x fs-lg-3x mb-5">
+                            <span style="color: #20AA3E">WELCOME</span> <span>To Tracer Study</span>
                         </h1>
-                        <div class="text-white fw-bolder fs-3 mb-15">Merupakan Aplikasi Yang Berbasis Website Untuk
-                            Melakukan Tracing Terhadap Aktifitas
-                            Alumni/Lulusan Dari <br> Universitas Islam Negeri Alauddin Makassar</div>
-                        <!--end::Title-->
-
-                        <!--begin::Action-->
-                        <button type="button" class="btn btn-primary" data-kt-drawer-show="true"
-                            data-kt-drawer-target="#side_form" id="button-side-form" data-bs-toggle="modal"
-                            data-bs-target="#kt_modal_1">
-                            Daftar Alumni
-                        </button>
-                        <button type="button" class="btn btn-info" data-kt-drawer-show="true"
-                            data-kt-drawer-target="#side_form" id="button-side-form" data-bs-toggle="modal"
-                            data-bs-target="#kt_modal_2">
-                            Survey Pengguna
-                        </button>
-                        <!--end::Action-->
-                        <x-form-pendaftaran />
-                        <x-form-survey />
+                        <div class="d-grid gap-5"
+                            style="border-left: 3px solid #20AA3E; padding-left: 10px; color: #ffffff">
+                            <span style="font-size: 25px">Universitas Islam Negeri Alauddin Makassar</span>
+                            <button class="btn btn-success" style="width: max-content">Contact Here</button>
+                        </div>
+                        <div class="mt-10 ms-20">
+                            <img width="200px" src="https://uin-alauddin.ac.id/themes//images/uin-white.png"
+                                alt="">
+                        </div>
                     </div>
                     <!--end::Heading-->
                 </div>
@@ -194,17 +180,57 @@
 
         <x-statistik />
 
-        <x-petunjuk />
+        <div id="tracer" class="mt-20 pt-10 pb-20 mb-n20 position-relative z-index-2">
+            <!--begin::Container-->
+            <div class="container">
+                <!--begin::Heading-->
+                <div class="text-center mt-15 mb-18" id="achievements"
+                    data-kt-scroll-offset="{default: 100, lg: 150}">
+                    <!--begin::Title-->
+                    <h3 class="fs-2hx text-dark mb-5">Tracer Study</h3>
+                    <!--end::Title-->
+                </div>
+                <!--end::Heading-->
+                <!--begin::Statistics-->
+                <div class="d-flex">
+                    <div class="fw-bolder fs-3 ps-5" style="border-left: 3px solid #20AA3E; height: max-content;">
+                        Merupakan Aplikasi Yang Berbasis Website Untuk
+                        Melakukan Tracing Terhadap Aktifitas Alumni/Lulusan Dari Universitas Islam Negeri Alauddin
+                        Makassar
+                    </div>
+                    <!--end::Title-->
+
+                    <div class="d-flex gap-5">
+                        <!--begin::Action-->
+                        <button type="button" class="btn btn-primary" data-kt-drawer-show="true"
+                            data-kt-drawer-target="#side_form" id="button-side-form" data-bs-toggle="modal"
+                            data-bs-target="#kt_modal_1">
+                            Daftar Alumni
+                        </button>
+                        <button type="button" class="btn btn-info" data-kt-drawer-show="true"
+                            data-kt-drawer-target="#side_form" id="button-side-form" data-bs-toggle="modal"
+                            data-bs-target="#kt_modal_2">
+                            Survey Pengguna
+                        </button>
+                        <!--end::Action-->
+                    </div>
+                    <x-form-pendaftaran />
+                    <x-form-survey />
+                </div>
+                <!--end::Statistics-->
+            </div>
+            <!--end::Container-->
+        </div>
 
         <!--begin::Testimonials Section-->
-        <div class="mt-20 mb-n20 position-relative z-index-2">
+        <div class="mt-20 mb-n20 position-relative">
             <!--begin::Container-->
             <div class="container">
                 <!--end::Row-->
 
                 <!--begin::Highlight-->
                 <div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13"
-                    style="background: linear-gradient(90deg, #20AA3E 0%, #03A588 100%);">
+                    style="background-color: dimgray">
                     <!--begin::Content-->
                     <div class="my-2 me-5">
                         <!--begin::Title-->

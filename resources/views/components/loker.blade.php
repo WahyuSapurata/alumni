@@ -35,7 +35,7 @@
                              $teks_pendek = potongTeksLoker(strip_tags($item->deskripsi));
                          @endphp
                          <div class="col-md-4">
-                             <div class="card shadow-lg h-470px">
+                             <div class="card h-470px" style="border: 1px solid rgba(0, 0, 0, .3); border-radius: 4px">
                                  <div class="card-body d-grid gap-2">
                                      <a target="_blank" href="{{ $item->link }}" class="fw-bolder fs-5">
                                          {{ $item->nama_loker }}
@@ -49,6 +49,8 @@
                                          <div>{{ $item->lokasi }}</div>
                                      </div>
                                      <div style="font-size: 12px">{{ $teks_pendek }}</div>
+                                     <a target="_blank" href="{{ $item->link }}"
+                                         style="font-style: italic">selengkapnya...</a>
                                  </div>
                              </div>
                          </div>

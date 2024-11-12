@@ -54,8 +54,8 @@
                     <div class="app-sidebar-logo d-flex align-items-center flex-grow-1 flex-lg-grow-0"
                         id="kt_app_sidebar_logo">
                         <a href="" class="full-logo">
-                            <img alt="Logo" src="https://uin-alauddin.ac.id/themes//images/favicon.png"
-                                class="mw-60px h-sm-auto app-sidebar-logo-default" />
+                            <img alt="Logo" src="https://uin-alauddin.ac.id/themes/images/logo-uin-navbar.png"
+                                class="mw-150px h-sm-auto app-sidebar-logo-default" />
                             <img alt="Logo" src="https://uin-alauddin.ac.id/themes//images/favicon.png"
                                 class="h-30px app-sidebar-logo-minimize" />
                         </a>

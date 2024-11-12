@@ -64,7 +64,7 @@
                 <!--end::Menu item-->
 
                 <!--begin::Menu item-->
-                <div class="menu-item">
+                {{-- <div class="menu-item">
                     <a class="menu-link {{ isset($path[1]) && $path[1] === 'data-maba' ? 'active' : '' }}"
                         href="{{ route('admin.data-maba') }}">
                         <span class="menu-icon">
@@ -79,7 +79,7 @@
                             style="{{ isset($path[1]) && $path[1] === 'data-maba' ? 'color: #F4BE2A' : 'color: #FFFFFF' }}">
                             Maba</span>
                     </a>
-                </div>
+                </div> --}}
                 <!--end::Menu item-->
 
                 <!--begin::Menu item-->

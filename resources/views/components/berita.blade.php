@@ -36,9 +36,10 @@
                         @endphp
 
                          <div class="col-md-6">
-                             <div class="card shadow-lg h-470px">
-                                 <img src="{{ asset('berita/' . $item->gambar) }}" class="w-100 h-200px" alt="">
-                                 <div class="card-body d-grid gap-2">
+                             <div class="card h-470px" style="border: 1px solid rgba(0, 0, 0, .3); border-radius: 4px">
+                                 <img src="{{ asset('berita/' . $item->gambar) }}" class="w-100 h-200px"
+                                     style="border-radius: 4px" alt="">
+                                 <div class="card-body d-grid p-5 gap-2">
                                      <div class="small text-muted"><small class="fst-italic">Publish :</small>
                                          {{ $item->tanggal_publikasi }}</div>
                                      <a href="{{ route('detail-berita', ['params' => $item->uuid]) }}"
@@ -46,6 +47,8 @@
                                          {{ $item->judul_berita }}
                                      </a>
                                      <div style="font-size: 12px">{{ $teks_pendek }}</div>
+                                     <a href="{{ route('detail-berita', ['params' => $item->uuid]) }}"
+                                         class="btn btn-success">Read More</a>
                                  </div>
                              </div>
                          </div>
@@ -78,7 +81,7 @@
                      Berita Terkini</div>
                  <div class="d-grid py-5 gap-5">
                      @foreach ($newBerita as $itemNew)
-                         <div class="card shadow-sm">
+                         <div class="card" style="border: 1px solid rgba(0, 0, 0, .3); border-radius: 4px">
                              <div class="card-body p-4">
                                  <div class="d-flex gap-4">
                                      <img src="{{ asset('berita/' . $itemNew->gambar) }}" alt=""
