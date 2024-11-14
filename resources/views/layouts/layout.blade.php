@@ -48,7 +48,7 @@
                 data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}"
                 data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_mobile_toggle">
                 <!--begin::Brand-->
-                <div class="aside-logo flex-column-auto bg-primary">
+                <div class="aside-logo flex-column-auto" style="background-color: #136c40">
                     <!--end::sidebar mobile toggle-->
                     <!--begin::Mobile logo-->
                     <div class="app-sidebar-logo d-flex align-items-center flex-grow-1 flex-lg-grow-0"

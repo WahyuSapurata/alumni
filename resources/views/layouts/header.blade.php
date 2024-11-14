@@ -64,8 +64,8 @@
                     <!--begin::User-->
                     <div class="d-flex align-items-center ms-1 ms-lg-3" id="kt_header_user_menu_toggle">
                         <!--begin::Menu wrapper-->
-                        <span class="bg-primary"
-                            style="width: 40px; height: 40px; position:relative; right:10px; border-radius: 5px; color: #FFFFFF; display: grid; justify-items: center; align-items: center; font-size: 14px; font-weight: 600">
+                        <span
+                            style="background-color: #136c40; width: 40px; height: 40px; position:relative; right:10px; border-radius: 5px; color: #FFFFFF; display: grid; justify-items: center; align-items: center; font-size: 14px; font-weight: 600">
                             @php
                                 $role = Auth::user()->role;
                                 $username = auth()->user()->name;
@@ -115,8 +115,8 @@
                                 <div class="menu-content d-flex align-items-center px-3">
                                     <!--begin::Avatar-->
                                     <div class="symbol symbol-50px me-5">
-                                        <span class="bg-primary"
-                                            style="width: 40px; height: 40px; position:relative; border-radius: 5px; color: #FFFFFF; display: grid; justify-items: center; align-items: center; font-size: 14px; font-weight: 600">
+                                        <span
+                                            style="background-color: #136c40; width: 40px; height: 40px; position:relative; border-radius: 5px; color: #FFFFFF; display: grid; justify-items: center; align-items: center; font-size: 14px; font-weight: 600">
                                             @php
                                                 $role = Auth::user()->role;
                                                 $username = auth()->user()->name;
@@ -146,8 +146,8 @@
                                     <!--begin::Username-->
                                     <div class="d-flex flex-column">
                                         <div class="fw-bold d-flex align-items-center fs-5">{{ $username }}
-                                            <div class="bg-primary rounded-circle p-1 ms-2 mb-2 bullet bullet-dot translate-middle animation-blink"
-                                                style=""></div>
+                                            <div class="rounded-circle p-1 ms-2 mb-2 bullet bullet-dot translate-middle animation-blink"
+                                                style="background-color: #136c40"></div>
                                         </div>
                                         <a href="#"
                                             class="fw-semibold text-muted text-hover-primary fs-7">{{ auth()->user()->email }}</a>
